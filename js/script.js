@@ -38,17 +38,38 @@
 //Цикл повинен запитувати число доти, доки відвідувач не введе число,
 // більше за 100, або не скасує ввід/введе порожній рядок.
 
-// let value = prompt('Введіть число більше 100');
+// let num;
+// do {
+//   num = prompt('Введіть чмсло більше за 100');
+// } while (num <= 100 && num);
 
-// console.log(value);
+// console.log(num);
+// console.log(typeof num);
 
-// let summ = 0;
-// while (true) {
-//   let value = +prompt('Введіть число');
-//   if (!value) break;
-//   summ += value;
+let num = prompt('Введіть число більше за 100');
+
+// for (;;) {
+//   if (num === null || num === '') {
+//     alert('Скасовано!');
+//     break;
+//   } else if (Number(num) === 'NaN') {
+//     alert('Введено не число!');
+//     num = prompt('Введіть число більше за 100');
+//   } else if (num > 100) {
+//     alert('Прийнято!');
+//     break;
+//   } else {
+//     alert('Введено число менше за 100');
+//     num = prompt('Введіть число більше за 100');
+//   }
 // }
-// console.log('Summ', summ);
+
+// num = Number(num);
+// console.log(num);
+// if (num == 'NaN') {
+//   console.log('Введено не число!');
+// }
+// console.log(typeof num);
 
 //  -- 5 --
 // Вирахуйте середній вік
