@@ -46,37 +46,33 @@
 // console.log(num);
 // console.log(typeof num);
 
-let num = prompt('Введіть число більше за 100');
-
+// let num = prompt('Введіть число більше за 100');
 // for (;;) {
 //   if (num === null || num === '') {
 //     alert('Скасовано!');
 //     break;
-//   } else if (Number(num) === 'NaN') {
-//     alert('Введено не число!');
-//     num = prompt('Введіть число більше за 100');
-//   } else if (num > 100) {
+//   } else if (Number(num) !== 'NaN' && num > 100) {
 //     alert('Прийнято!');
 //     break;
-//   } else {
+//   } else if (Number(num) !== 'NaN' && num <= 100) {
 //     alert('Введено число менше за 100');
+//     num = prompt('Введіть число більше за 100');
+//   } else {
+//     alert('Введено не число!');
 //     num = prompt('Введіть число більше за 100');
 //   }
 // }
 
-// num = Number(num);
-// console.log(num);
-// if (num == 'NaN') {
-//   console.log('Введено не число!');
-// }
-// console.log(typeof num);
-
 //  -- 5 --
 // Вирахуйте середній вік
 
+// const initialValue = 0;
 // const girls = [
-//   { age: 23, name: "Оля" },
-//   { age: 29, name: "Аня" },
-//   { age: 10, name: "Юля" },
-//   { age: 20, name: "Катя" },
+//   { age: 23, name: 'Оля' },
+//   { age: 29, name: 'Аня' },
+//   { age: 10, name: 'Юля' },
+//   { age: 20, name: 'Катя' },
 // ];
+// let averAge =
+//   girls.reduce((sum, item) => sum + item.age, initialValue) / girls.length;
+// console.log(averAge);
